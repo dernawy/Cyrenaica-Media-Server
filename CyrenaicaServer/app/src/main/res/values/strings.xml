@@ -1,0 +1,497 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Cyrenaica Server</string>
+
+    <!-- SYMBOLS -->
+    <string name="app_name_small">Cyrenaica Server</string>
+    <string name="app_name_cap">CYRENAICA SERVER</string>
+
+    <string name="nc_field_capital">NC</string>
+    <string name="unknown_field_small">Unknown</string>
+    <string name="scanning_text">Scanning</string>
+    <string name="scanning_points_text">Scanning…</string>
+    <string name="connected_text">Connected</string>
+    <string name="not_connected_text">Disconnected</string>
+    <string name="not_auth_text">Not authorized</string>
+
+    <!-- WORDS -->
+    <string name="word_servers_small">servers</string>
+    <string name="word_servers_first_cap_small">Servers</string>
+    <string name="word_servers_cap">SERVERS</string>
+    <string name="word_server_small">server</string>
+    <string name="word_server_first_cap_small">Server</string>
+    <string name="word_server_cap">SERVER</string>
+    <string name="word_devices_small">devices</string>
+    <string name="word_devices_first_cap_small">Devices</string>
+    <string name="word_devices_cap">DEVICES</string>
+    <string name="word_device_small">device</string>
+    <string name="word_device_first_cap_small">Device</string>
+    <string name="word_device_cap">DEVICE</string>
+    <string name="word_model_cap">MODEL</string>
+    <string name="word_spiffs_cap">SPIFFS</string>
+    <string name="word_heap_cap">HEAP</string>
+    <string name="word_frequancey_cap">FREQUANCEY</string>
+    <string name="word_name_cap">NAME</string>
+    <string name="word_name_first_cap_small">Name</string>
+    <string name="word_id_cap">ID</string>
+    <string name="word_type_cap">TYPE</string>
+    <string name="word_network_status_cap">NETWORK STATUS</string>
+    <string name="word_connection_first_cap_small">Connection</string>
+    <string name="word_connection_cap">CONNECTION</string>
+    <string name="word_wifi_first_cap_small">Wifi</string>
+    <string name="word_wifi_cap">WIFI</string>
+    <string name="word_mobile_cap">MOBILE</string>
+    <string name="word_mobile_first_cap_small">Mobile</string>
+    <string name="word_ip_cap">IP</string>
+    <string name="word_mac_cap">MAC</string>
+    <string name="word_connected_first_cap_small">Connected</string>
+    <string name="word_disconnected_first_cap_small">Disconnected</string>
+    <string name="word_secured_first_cap_small">Secured</string>
+    <string name="word_unsecured_first_cap_small">Unsecured</string>
+    <string name="word_status_first_cap_small">Status</string>
+    <string name="word_wifi_status_first_cap_small">Wifi</string>
+    <string name="word_espnow_status_first_cap_small">Espnow</string>
+    <string name="word_date_time_first_cap_small">DateTime</string>
+    <string name="word_settings_cap">SETTINGS</string>
+    <string name="word_settings_first_cap_small">Settings</string>
+    <string name="word_minutes_first_cap_small">Minute(s)</string>
+    <string name="word_record_first_cap_small">Record</string>
+    <string name="word_watch_first_cap_small">Watch</string>
+    <string name="word_advanced_settings_cap">ADVANCED SETTINGS</string>
+    <string name="word_fonts_cap">ADVANCED SETTINGS</string>
+    <string name="word_fonts_first_cap_small">Fonts</string>
+    <string name="word_size_cap_small">Size</string>
+    <string name="word_pic_logo_cap_small">Pick logo</string>
+    <string name="word_pic_position_cap_small">Position</string>
+    <string name="word_text_color_cap_small">Font color</string>
+
+    <!-- NUMBERS -->
+    <string name="number_0">0</string>
+    <string name="number_1">1</string>
+    <string name="number_2">2</string>
+    <string name="number_3">3</string>
+    <string name="number_4">4</string>
+    <string name="number_5">5</string>
+    <string name="number_6">6</string>
+    <string name="number_7">7</string>
+    <string name="number_8">8</string>
+    <string name="number_9">9</string>
+
+    <!-- BUTTONS -->
+    <string name="button_start">Start</string>
+    <string name="button_close">Close</string>
+    <string name="button_end">End</string>
+    <string name="terminate_button">Terminate</string>
+    <string name="retry_button">Retry</string>
+    <string name="button_setup">Setup</string>
+    <string name="button_scan">Scan</string>
+    <string name="button_database_setup">Setup Database</string>
+    <string name="button_get_device">Get Device</string>
+    <string name="button_enable_wifi">Enable Wifi</string>
+    <string name="button_enable_gps">Enable Gps</string>
+    <string name="button_cancel">Cancel</string>
+    <string name="button_connect">Connect</string>
+    <string name="button_save">Save</string>
+    <string name="button_next">Next</string>
+    <string name="button_restart">Restart</string>
+    <string name="button_modify">Modify</string>
+    <string name="button_change_name">Change Name</string>
+    <string name="button_continue">Continue</string>
+    <string name="button_rescan">Rescan</string>
+    <string name="button_reinstall">Reinstall</string>
+    <string name="button_delete_device">Delete Device</string>
+    <string name="button_reset_device">Reset Device</string>
+    <string name="button_reset">Reset</string>
+    <string name="button_delete">Delete</string>
+    <string name="button_rename">Rename</string>
+    <string name="button_set_name">Set Name</string>
+    <string name="button_watch_first_cap_small">Watch</string>
+    <string name="button_don_not_know">Don\'t Know</string>
+    <string name="button_ok">OK</string>
+
+    <!-- FFMPEG FONTS NAME -->
+    <string name="font_name_cairo">cairo</string>
+
+
+    <!-- SPLASH ACTIVITY -->
+    <string name="title_activity_splash">SplashActivity</string>
+    <string name="word_select_Language">Choose language</string>
+    <string name="intro_first_time_text">While this is the first time you use the application, please click start button to start setup</string>
+
+    <!-- DATABASE INTERFACE -->
+    <!-- INTERFACE -->
+    <string name="database_interface_page_title">Database Manager</string>
+    <string name="database_interface_database_info_title">Database information</string>
+    <string name="database_interface_database_name_label">Database Name</string>
+    <string name="database_interface_database_tables_count_label">Tables Count</string>
+    <string name="database_interface_database_create_table_button">Create Table</string>
+    <string name="database_interface_database_delete_table_button">Delete Table</string>
+    <string name="database_interface_database_delete_device_button">Delete Device</string>
+    <string name="database_interface_database_create_table_input_hint">Enter the name of table to be created</string>
+    <string name="database_interface_database_delete_table_input_hint">Enter the name of table to be deleted</string>
+    <string name="database_interface_database_delete_device_table_input_hint">Enter the name of table to delete device from</string>
+    <string name="database_interface_database_create_table_input_helper">Please enter a name not more than 20 letters, without numbers or special characters</string>
+    <string name="database_interface_database_delete_table_input_helper">Please enter the right table\'s name</string>
+    <string name="database_interface_tables_spinner_label">Tables</string>
+    <string name="database_interface_devices_spinner_label">Devices</string>
+    <string name="database_interface_database_create_table_create_button">Create</string>
+    <string name="database_interface_database_delete_table_delete_button">Delete</string>
+
+    <!-- SETUP -->
+    <string name="database_setup_page_title">Database Setup</string>
+    <string name="database_setup_page_intro_new">While this is the first time that you add a new device we will create the database for the first time</string>
+    <string name="database_setup_page_intro_edit">You asked to modify the database, here you can change the password and the password salt</string>
+    <string name="database_setup_cipher_hint">Password Salt</string>
+    <string name="database_setup_cipher_helper">Please, choose a password salt that is more than 16 characters, you can use the special characters like (@!:*)</string>
+    <string name="database_setup_password_hint">Password</string>
+    <string name="database_setup_password_helper">Please, choose a password that is more than 8 characters, you can use the special characters like</string>
+    <string name="database_setup_end_msg_success">Database created successfully</string>
+    <string name="database_setup_end_msg_error">Failed creating the database</string>
+
+    <string name="database_server_table_not_exist_reinstall">Servers table did not exist in database! You can not continue please restart the application and try again</string>
+    <string name="database_server_settings_table_not_exist_reinstall">Servers Settings table did not exist in database! You can not continue please restart the application and try again</string>
+    <string name="database_camera_table_not_exist_reinstall">Cameras table did not exist in database! You can not continue please restart the application and try again</string>
+    <string name="database_camera_settings_table_not_exist_reinstall">Cameras Settings table did not exist in database! You can not continue please restart the application and try again</string>
+    <string name="database_controller_table_not_exist_reinstall">Controllers table did not exist in database! You can not continue please restart the application and try again</string>
+    <string name="database_controller_settings_table_not_exist_reinstall">Controllers Settings table did not exist in database! You can not continue please restart the application and try again</string>
+    <string name="database_detector_table_not_exist_reinstall">Detectors table did not exist in database! You can not continue please restart the application and try again</string>
+    <string name="database_detector_settings_table_not_exist_reinstall">Detectors Settings table did not exist in database! You can not continue please restart the application and try again</string>
+
+    <!-- TOOLBAR -->
+    <string name="toolbar_search_icon_label">Search</string>
+    <string name="toolbar_add_new_server_menu_item_label">Add new server</string>
+    <string name="toolbar_add_new_device_menu_item_label">Add new device</string>
+    <string name="toolbar_view_installed_servers_menu_item_label">View installed servers</string>
+    <string name="toolbar_view_installed_devices_menu_item_label">View installed devices</string>
+    <string name="toolbar_settings_menu_item_label">View installed devices</string>
+
+    <!-- MAIN ACTIVITY -->
+    <string name="main_view_server_and_devices_info_label">Current servers and devices in database</string>
+    <string name="main_setup_not_completed_message">You did not installed any servers yet, please click the button below to add new server</string>
+    <string name="main_add_new_server_button_label">Add new server</string>
+    <string name="main_add_new_device_button_label">Add new device</string>
+    <string name="main_view_installed_servers_button_label">View installed servers</string>
+    <string name="main_view_installed_devices_button_label">View installed devices</string>
+
+    <!-- ADD NEW SERVER ACTIVITY -->
+    <string name="add_new_server_activity_label">Add new server</string>
+    <string name="add_new_server_servers_count_first_paragraph">There are</string>
+    <string name="add_new_server_servers_count_last_paragraph">server(s) in database</string>
+    <string name="add_new_server_activity_scan_for_new_server_description">Search for your new server</string>
+    <string name="add_new_server_activity_scan_for_new_server_button">The access point will appear here</string>
+    <string name="gps_disabled_message">You must enable GPS to continue</string>
+    <string name="wifi_disabled_message">You must enable WIFI to continue</string>
+    <string name="conn_to_server_dialog_pass_validation_msg">The password is not correct, please use the default password found on the server box</string>
+    <string name="wifi_setup_security_check_ko">This device can not moderate this server because of the deference between APP ID signature on this application and the server, please refer to the APP distributor to resolve this problem</string>
+    <string name="click_here_to_continue_capital">CLICK HERE TO CONTINUE</string>
+
+    <!-- NEW SERVER SCAN WIFI DIALOGUE -->
+    <string name="wifi_connect_dialog_title">Connect To Server</string>
+    <string name="wifi_setup_password_field_helper">The password must be at least (8) characters minimum</string>
+    <string name="wifi_setup_default_password_field_hint">Enter default password</string>
+    <string name="wifi_setup_password_field_alert">Must enter the default password, the default password can be found on the bottom of your box</string>
+
+    <!-- SECURITY ACTIVITY -->
+    <string name="security_page_title">Network Settings</string>
+    <string name="wifi_setup_default_ssid_field_hint">Default access point name</string>
+    <string name="wifi_setup_change_default_password_field_hint">Change default password</string>
+    <string name="wifi_setup_ssid_no_change_field_helper">Access point name can not be changed</string>
+    <string name="wifi_setup_router_ssid_field_hint">Enter router SSID</string>
+    <string name="wifi_setup_router_ssid_field_helper">The SSID of router to connect to internet</string>
+    <string name="wifi_setup_router_password_field_hint">Enter router password</string>
+    <string name="security_check_connected_to_wifi_label">Network</string>
+    <string name="security_check_connected_to_sockets_label">Sockets</string>
+    <string name="wifi_setup_default_password_field_helper">The device\'s current password is still default, please change the default password with other strong one</string>
+    <string name="wifi_setup_current_password_field_hint">Current saved password</string>
+    <string name="wifi_setup_pass_zero_error">The PASSWORD field is empty, please enter a valid PASSWORD</string>
+    <string name="wifi_setup_pass_min_error">The PASSWORD field length is less than the minimum PASSWORD length, must be between 8 and 40 characters</string>
+    <string name="wifi_setup_pass_max_error">The PASSWORD field length is more than the maximum PASSWORD length, must be between 8 and 40 characters</string>
+    <string name="wifi_setup_pass_equal_to_default_error">The entered PASSWORD is exactly the default PASSWORD, please change the PASSWORD</string>
+    <string name="wifi_setup_ssid_min_error">The ssid field length is less than the minimum SSID length, must be between 8 and 40 characters</string>
+    <string name="wifi_setup_ssid_zero_error">The SSID field is empty, please enter a valid SSID</string>
+    <string name="wifi_setup_ssid_max_error">The ssid field length is more than the maximum SSID length, must be between 8 and 40 characters</string>
+    <string name="wifi_setup_ssid_equal_to_default_error">The entered SSID is exactly the default SSID, please change the SSID</string>
+    <string name="wifi_setup_end_success">The network settings saved successfully</string>
+    <string name="wifi_setup_ap_pass_error">Error while saving access point password</string>
+    <string name="wifi_setup_router_ssid_error">Error while saving router ssid</string>
+    <string name="wifi_setup_router_pass_error">Error while saving router_password</string>
+    <string name="setup_server_insert_error">The new device you trying to setup, exist in the database</string>
+
+    <!-- NEW SERVER SETTINGS ACTIVITY -->
+    <string name="new_server_settings_page_title">Network Preferences</string>
+    <string name="new_server_settings_ap_setting_label">Access point</string>
+    <string name="new_server_settings_ap_setting_tip">In this section you can (set/change) accesspoint wifi channel, max connected clients and static ip</string>
+    <string name="new_server_settings_ap_channel_input_hint">Choose access point wifi channel</string>
+    <string name="new_server_settings_ap_channel_input_helper">Choose a channel between [0 and 12]</string>
+    <string name="new_server_settings_ap_channel_input_zero_error">The field is empty</string>
+    <string name="new_server_settings_ap_channel_input_min_max_error">The access point channel must be between 0 and 12</string>
+    <string name="new_server_settings_ap_max_clients_input_hint">Max devices connection</string>
+    <string name="new_server_settings_ap_max_clients_input_helper">Max devices can connect to this server are 5 devices</string>
+    <string name="new_server_settings_ap_max_clients_input_zero_error">The field is empty</string>
+    <string name="new_server_settings_ap_max_clients_input_min_max_error">The max connected clients must be between 1 and 5</string>
+    <string name="new_server_settings_ap_use_static_ip_label">Use static IP for accesspoint</string>
+    <string name="new_server_settings_ap_static_ip_input_hint">Static IP</string>
+    <string name="new_server_settings_ap_static_ip_input_helper">Please enter an IP for the access point</string>
+    <string name="new_server_settings_sta_setting_label">Station</string>
+    <string name="new_server_settings_sta_setting_tip">In this section you can (set/change) network [STA] static ip and gateway ip</string>
+    <string name="new_server_settings_sta_use_static_ip_label">Use static IP for network</string>
+    <string name="new_server_settings_sta_static_ip_input_hint">Network static IP</string>
+    <string name="new_server_settings_sta_static_ip_input_helper">Please enter an IP for the network</string>
+    <string name="new_server_settings_sta_gateway_input_hint">Gateway IP</string>
+    <string name="new_server_settings_sta_gateway_input_helper">Please enter an IP for the gateway</string>
+    <string name="new_server_settings_sta_netmask_input_hint">Netmask IP</string>
+    <string name="new_server_settings_sta_netmask_input_helper">Please enter an IP for the netmask (255.255.0.0) by default</string>
+    <string name="new_server_settings_sta_dns1_input_hint">First DNS IP</string>
+    <string name="new_server_settings_sta_dns1_input_helper">Please enter an IP for first dns (Optional) (8.8.8.8) by default</string>
+    <string name="new_server_settings_sta_dns2_input_hint">Second DNS IP</string>
+    <string name="new_server_settings_sta_dns2_input_helper">Please enter an IP for second dns (Optional) (8.8.4.4) by default</string>
+    <string name="new_server_settings_ip_input_validation_error">This IP is not valid. Please enter a valid IP address</string>
+    <string name="new_server_settings_error_dialog_label">New Server Settings Save Error</string>
+    <string name="new_server_settings_ap_static_ip_error">Error while saving the access point static IP</string>
+    <string name="new_server_settings_ap_channel_error">Error while saving the access point wifi channel</string>
+    <string name="new_server_settings_ap_max_clients_error">Error while saving the access point max clients</string>
+    <string name="new_server_settings_sta_static_ip_error">Error while saving the station static ip</string>
+    <string name="new_server_settings_sta_gateway_error">Error while saving the station gateway</string>
+    <string name="new_server_settings_sta_dns_tip">You can set or modify the DNS (1 and 2) from server settings page later</string>
+
+    <!-- ADD NEW DEVICE ACTIVITY -->
+    <string name="add_new_device_add_icon_label">Add Device</string>
+    <string name="add_new_device_device_type_camera_label">Add new Camera</string>
+    <string name="add_new_device_device_type_detector_label">Add new Detector</string>
+    <string name="add_new_device_device_type_controller_label">Add new Controller</string>
+
+    <!-- NEW DEVICE SETUP ACTIVITY -->
+    <string name="add_new_device_activity_label">Add new device</string>
+    <string name="add_new_device_devices_count_first_paragraph">There are</string>
+    <string name="add_new_device_devices_count_last_paragraph">devices(s) in database</string>
+    <string name="server_add_device_choose_device_list_label">Choose Device</string>
+    <string name="server_add_device_choose_device_model_list_label">Choose Device Model</string>
+    <string name="server_add_device_choose_server_list_label">Choose Server</string>
+    <string name="server_add_device_choose_server_list_message">Please choose a server to attach this device to</string>
+    <string name="server_add_device_no_servers_found_message">You did not installed any server yet to attache devices to, please add a server before adding devices</string>
+    <string name="server_add_device_device_name_hint">Choose a name for your device</string>
+    <string name="server_add_device_device_name_helper">Please chose a name that explain the place where this device installed [BEDROOM, KITCHEN, SALON … etc]. this name will be appear in many places and will be add to device\'s accesspoint name. This name must be in Latin characters only and must be between [3 and 8] characters length</string>
+    <string name="add_new_device_activity_scan_for_new_device_description">Search for your new device</string>
+    <string name="add_new_device_wifi_scan_ap_name_default_description">The access point will appear here</string>
+    <string name="add_new_device_activity_scan_for_new_device_button">The access point will appear here</string>
+
+    <string name="server_add_device_choose_device_model_error_message_text">You must choose a device model first</string>
+    <string name="server_add_device_security_check_save_device_duplicated_name_error">The NAME of the device you trying to add it is already conflicted withe other device\'s name in database, please change the name of the device then click on [CHANGE NAME] button to change the device name or click [DELETE] button below to delete the conflicted device data from database</string>
+    <string name="server_add_device_security_check_save_device_duplicated_ssid_error">The SSID of the device you trying to add it is already conflicted withe other device\'s name in database, please change the name of the device then click on [CHANGE NAME] button to change the device name or click [RESET DEVICE] button below to delete the conflicted device data from database</string>
+    <string name="server_add_device_security_check_save_device_duplicated_name_ssid_error">The SSID and NAME of the device you trying to add they are already conflicted withe other device\'s ssid and name in database, please change the name of the device then click on [CHANGE NAME] button to change the device name or click [RESET DEVICE] button below to delete the conflicted device data from database and restart the setup process</string>
+    <string name="server_add_device_delete_device_success_message">Your device deleted successfully.</string>
+    <string name="server_add_device_reset_device_now_message">Now will reset your device configuration.</string>
+    <string name="server_add_device_reset_device_success_message">Your device reset successfully, click [CONTINUE] button below to continue the device setup</string>
+    <string name="server_add_device_delete_device_error_message">Error while deleting your device from database</string>
+    <string name="server_add_device_camera_wifi_connect_dialog_title">Connect To Camera</string>
+    <string name="server_add_device_controller_wifi_connect_dialog_title">Connect To Controller</string>
+    <string name="server_add_device_detector_wifi_connect_dialog_title">Connect To Detector</string>
+    <string name="server_add_device_wifi_camera_setup_password_field_alert">Must enter the default password, the default password can be found on the bottom of your camera</string>
+    <string name="server_add_device_wifi_controller_setup_password_field_alert">Must enter the default password, the default password can be found on the bottom of your controller device</string>
+    <string name="server_add_device_wifi_detector_setup_password_field_alert">Must enter the default password, the default password can be found on the bottom of your detector device</string>
+    <string name="server_add_device_reset_device_config_error_message">Error while resetting your device\'s configuration, please try to reset your device manually</string>
+    <string name="server_add_device_ap_view_after_reset_message">Please rescan your device</string>
+    <string name="server_add_device_no_cyrenaica_devices_nearby_message">There is no CYRENAICA\'s series devices nearby</string>
+    <string name="server_add_device_check_device_setup_ok_to_reset_error">This device was configured before or had an error while setup process, if you like to reinstall this device again, please reset it before by clicking on the button [RESET DEVICE] below to reset device and restart the setup, or [CANCEL] to go to main page</string>
+    <string name="server_add_device_check_default_id_not_equal_error">This device was stopped without finishing the setup, please reset your new device and restart the setup again by clicking on [RESTART SETUP] button below</string>
+    <string name="server_add_device_security_check_save_device_duplicated_error">The device you trying to add it is already installed, if you like to reinstall it, please click on Reinstall button below</string>
+    <string name="server_add_device_save_password_loading_dialog_label">Saving Password</string>
+    <string name="server_add_device_save_password_loading_dialog_msg">Saving device password, please wait</string>
+    <string name="server_add_device_save_password_loading_dialog_text">Saving</string>
+    <string name="server_add_device_delete_device_loading_dialog_label">Deleting Device</string>
+    <string name="server_add_device_delete_device_loading_dialog_msg">Deleting device, please wait</string>
+    <string name="server_add_device_delete_device_loading_dialog_text">Deleting</string>
+    <string name="server_add_device_reset_device_loading_dialog_label">Resetting Device</string>
+    <string name="server_add_device_reset_device_loading_dialog_msg">Resetting device, please wait</string>
+    <string name="server_add_device_reset_device_loading_dialog_text">Resetting</string>
+    <string name="server_add_device_save_device_loading_dialog_label">Saving Device</string>
+    <string name="server_add_device_save_device_loading_dialog_msg">Saving device information, please wait</string>
+    <string name="server_add_device_save_device_loading_dialog_text">Saving</string>
+    <string name="server_add_device_security_check_label">Change device\'s default password</string>
+    <string name="server_add_device_security_check_password_changed_successfully_label">Device\'s default password changed successfully</string>
+    <string name="server_add_device_security_check_password_change_error_label">Error while saving device\'s default password</string>
+
+    <!-- VIEW ALL SERVERS ACTIVITY -->
+    <string name="view_all_servers_page_label">View All Servers</string>
+    <string name="view_all_servers_page_subtitle">A list of all servers</string>
+
+    <!-- SERVER HOME ACTIVITY -->
+    <string name="server_home_page_label">Server Home</string>
+    <string name="server_home_page_server_id_label">ID</string>
+    <string name="server_home_page_server_id_value">0</string>
+    <string name="server_home_page_server_name_cap_label">NAME</string>
+    <string name="server_home_sensors_label">Sensors</string>
+    <string name="server_home_attached_devices_list_label">Attached devices</string>
+    <string name="server_home_attached_devices_no_devices_msg">There are no devices attached to this server, please add device(s) then attach them to server</string>
+
+    <!-- RECORD & WATCH SETTINGS DIALOG -->
+    <string name="show_video_on_screen_info_switch_label">Show video on screen info</string>
+    <string name="show_video_on_screen_info_helper_text">This will show some info on the video while recording</string>
+    <string name="show_logo_label">Show Logo</string>
+    <string name="show_logo_helper_text">Show your logo on video recorded by camera</string>
+
+    <string name="activate_face_detect_switch_label">Activate face detection</string>
+    <string name="activate_face_recognise_switch_label">Activate face recognise</string>
+    <string name="face_detect_recognise_helper">This will activate the face detection and face recognise</string>
+    <string name="record_stream_to_application_switch_label">Record stream in application</string>
+    <string name="record_stream_to_application_helper">Activate this only if your phone have huge internal disk drive more than [256 Gb], if you chosen this option will generate video file of type [MP4] on the phone hard disk inside the application space. This file will be available after stoping recording</string>
+    <string name="record_on_sd_section_label">Please fill the recording on SD settings</string>
+    <string name="file_name_layout_helper">Please choose a name with characters length between [6 and 10] characters, if this field is empty the device name will be part of file name</string>
+    <string name="file_name_layout_hint">Please choose file name</string>
+    <string name="choose_record_file_type_section_label">Choose record file type</string>
+    <string name="file_type_mp4">MP4</string>
+    <string name="file_type_mov">MOV</string>
+    <string name="file_type_mp4_choose_resul_label">Choose MP4 resul</string>
+    <string name="file_quality_as_origenal">As origenal</string>
+    <string name="file_quality_hd">HD</string>
+    <string name="file_quality_4k">4K</string>
+    <string name="video_max_length_label">Video Max length in [minutes]</string>
+    <string name="video_source_size_label">Resolution</string>
+    <string name="video_source_size_not_know_message">Camera resolution set to</string>
+
+    <string name="menu_camera_watch_settings">Camera watch settings</string>
+    <string name="menu_camera_record_settings">Camera record settings</string>
+    <string name="menu_camera_watch_details">Camera details</string>
+
+    <string name="menu_camera_watch_preferences_camera_network_setting_title">Network Settings</string>
+
+    <string name="menu_camera_watch_preferences_camera_network_setting_label"><b>Camera Network Settings</b></string>
+    <string name="menu_camera_watch_preferences_camera_network_setting_summary">Connection between camera and application</string>
+
+    <string name="menu_camera_watch_preferences_camera_network_http_label">HTTP</string>
+    <string name="menu_camera_watch_preferences_camera_network_http_summary">Use http connection</string>
+    <string name="menu_camera_watch_preferences_camera_network_http_on_summary">HTTP connection used</string>
+
+    <string name="menu_camera_watch_preferences_camera_network_udp_label">UDP</string>
+    <string name="menu_camera_watch_preferences_camera_network_udp_summary">Use udp connection</string>
+    <string name="menu_camera_watch_preferences_camera_network_udp_on_summary">UDP connection used</string>
+
+    <string name="menu_camera_watch_connection_port_title">Port</string>
+    <string name="menu_camera_watch_connection_port_summary">Set the connection port</string>
+
+
+    <string name="menu_camera_watch_preferences_camera_face_detection_setting_label"><b>Face Detection Settings</b></string>
+    <string name="menu_camera_watch_preferences_camera_face_detection_setting_summary">Use face detection with this camera</string>
+
+    <string name="menu_camera_watch_preferences_camera_activate_f_detection_label">Face Detection</string>
+    <string name="menu_camera_watch_preferences_camera_activate_f_detection_summary">Activate Face Detection</string>
+    <string name="menu_camera_watch_preferences_camera_activate_f_detection_on_summary">Face detection activated</string>
+
+    <string name="menu_camera_watch_preferences_face_recognize_setting_label"><b>Face Recognize setting</b></string>
+    <string name="menu_camera_watch_preferences_face_recognize_setting_summary">Set the face recognize settings</string>
+
+    <string name="menu_camera_watch_preferences_camera_show_onscreen_text_setting_label"><b>Show Onscreen Text Settings</b></string>
+    <string name="menu_camera_watch_preferences_camera_show_onscreen_text_setting_summary">Show text on camera view\n[Camera name, Date and time … etc]</string>
+
+    <string name="menu_camera_watch_preferences_camera_show_onscreen_text_label">Onscreen Text</string>
+    <string name="menu_camera_watch_preferences_camera_show_onscreen_text_summary">Show onscreen text</string>
+    <string name="menu_camera_watch_preferences_camera_show_onscreen_text_on_summary">Onscreen text visible</string>
+
+    <string name="menu_camera_watch_face_recognize_preferences_edit_measurements_setting_label">Face Recognize Measurements Settings</string>
+    <string name="menu_camera_watch_face_recognize_preferences_edit_measurements_setting_summary">Edit face recognize measurements</string>
+
+    <string name="menu_camera_watch_face_recognize_preferences_edit_measurements_face_scale_width_title">Face Scale Width</string>
+    <string name="menu_camera_watch_face_recognize_preferences_edit_measurements_face_scale_width_summary">Set face scale width</string>
+
+    <string name="menu_camera_watch_face_recognize_preferences_edit_measurements_face_scale_height_title">Face Scale Height</string>
+    <string name="menu_camera_watch_face_recognize_preferences_edit_measurements_face_scale_height_summary">Set face scale height</string>
+
+    <string name="menu_camera_watch_face_recognize_preferences_edit_measurements_face_scale_factor_title">Face Scale Factor</string>
+    <string name="menu_camera_watch_face_recognize_preferences_edit_measurements_face_scale_factor_summary">Set face scale factor</string>
+
+    <string name="menu_camera_watch_face_recognize_preferences_edit_measurements_min_neighbors_title">Mine Neighbors</string>
+    <string name="menu_camera_watch_face_recognize_preferences_edit_measurements_min_neighbors_summary">Set recognize min neighbors</string>
+
+    <string name="menu_camera_watch_face_recognize_preferences_edit_measurements_recognize_flags_title">Recognize Flags</string>
+    <string name="menu_camera_watch_face_recognize_preferences_edit_measurements_recognize_flags_summary">Set recognize flags</string>
+
+    <string name="menu_camera_watch_video_play_option_setting_label">Video Play Options</string>
+    <string name="menu_camera_watch_video_play_option_setting_summary">Edit video play options</string>
+
+    <string name="menu_camera_watch_video_play_option_category_label"><b>Play Options</b></string>
+    <string name="menu_camera_watch_video_play_option_category_summary">Choose the way to play video</string>
+
+
+    <string name="menu_camera_record_video_play_by_ffmpeg_title">Play By FFMPEG</string>
+    <string name="menu_camera_record_video_play_by_ffmpeg_summary">Use FFMPEG to play video</string>
+    <string name="menu_camera_record_video_play_by_ffmpeg_on_summary">Play by FFMPEG activated</string>
+
+    <string name="menu_camera_record_video_play_by_mjpeg_title">Play By MJPEG</string>
+    <string name="menu_camera_record_video_play_by_mjpeg_summary">Use MJPEG to play video</string>
+    <string name="menu_camera_record_video_play_by_mjpeg_on_summary">Play by MJPEG activated</string>
+
+    <!-- VIDEO RECORD  -->
+    <string name="menu_camera_record_activate_video_record_category_title"><b>Video Record Options</b></string>
+    <string name="menu_camera_record_activate_video_record_category_summary">Set/Edit video record options</string>
+
+    <string name="menu_camera_record_activate_video_record_title">Activate Video Record</string>
+    <string name="menu_camera_record_activate_video_record_summary">Set activate video record</string>
+    <string name="menu_camera_record_activate_video_record_on_summary">Video record activated</string>
+
+    <string name="menu_camera_record_activate_video_record_and_play_title">Activate Video Record And Play</string>
+    <string name="menu_camera_record_activate_video_record_and_play_summary">Set activate video record and play</string>
+    <string name="menu_camera_record_activate_video_record_and_play_on_summary">Record and play activated</string>
+
+    <string name="menu_camera_record_video_record_and_play_by_ffmpeg_title">Play And Record By FFMPEG</string>
+    <string name="menu_camera_record_video_record_and_play_by_ffmpeg_summary">Use FFMPEG to record video</string>
+    <string name="menu_camera_record_video_record_and_play_by_ffmpeg_on_summary">Play and record by FFMPEG activated</string>
+
+
+
+
+    <!-- RECORD & WATCH SETTINGS DIALOG ERRORS  -->
+    <string name="no_name_no_date_time_chosen">Please choose on element below or disable this option</string>
+    <string name="file_name_min_error">The file name is less than accepted minimum characters length</string>
+    <string name="file_name_max_error">The file name is more than accepted maximum characters length</string>
+    <string name="internal_memory_less_than_256gb_end_dialog">To go to watch this camera please click on watch or click cancel to exit this camera</string>
+    <string name="file_type_mp4_choose_resul_helper">This will generate the file with chosen resul</string>
+
+    <string name="save_record_setting_dialog_camera_source_resolution_error">You did\'nt chosen a camera source resolution, please click OK and chose a resolution</string>
+
+    <string name="save_record_setting_dialog_device_name_font_error">You chosen to show the device name on the video record but you did\'nt chosen a font, please click OK and choose a device name font</string>
+    <string name="save_record_setting_dialog_device_name_font_path_error">You chosen to show the device name on the video record but there is an error while getting the font path, please click OK and try to choose other font</string>
+    <string name="save_record_setting_dialog_device_name_font_size_error">You chosen to show the device name on the video record but you did\'nt chosen a font size, please click OK and choose a device name font size</string>
+    <string name="save_record_setting_dialog_device_name_font_color_error">You chosen to show the device name on the video record but you did\'nt chosen a font color, please click OK and choose a device name font color</string>
+
+    <string name="save_record_setting_dialog_date_time_font_error">You chosen to show the date (and/or) time on the video record but you did\'nt chosen a font, please click OK and choose a date (and/or) time font</string>
+    <string name="save_record_setting_dialog_date_time_font_path_error">You chosen to show the date (and/or) time on the video record but there is an error while getting the font path, please click OK and try to choose other font</string>
+    <string name="save_record_setting_dialog_date_time_font_size_error">You chosen to show the date (and/or) time on the video record but you did\'nt chosen a font size, please click OK and choose a date (and/or) time font size</string>
+    <string name="save_record_setting_dialog_date_time_font_color_error">You chosen to show the date (and/or) time on the video record but you did\'nt chosen a font color, please click OK and choose a date (and/or) time font color</string>
+
+    <string name="save_record_setting_dialog_logo_absent_error">You chosen to show a LOGO on the video record but you did\'nt chosen a LOGO image, please click OK and choose a LOGO image</string>
+    <string name="save_record_setting_dialog_logo_position_error">You chosen to show a LOGO on the video record but you did\'nt chosen a LOGO position, please click OK and choose a LOGO position</string>
+
+    <string name="dashboard_connectivity_network_type_label">Network</string>
+    <string name="dashboard_connectivity_network_band_label">اBand</string>
+    <string name="dashboard_connectivity_network_status_1_label">Connected</string>
+    <string name="dashboard_connectivity_network_status_2_label">غDisconnected</string>
+    <string name="dashboard_connectivity_network_status_3_label">No network</string>
+    <string name="dashboard_connectivity_network_access_1_text">Local access to server</string>
+    <string name="dashboard_connectivity_network_access_2_text">Remote access to server</string>
+
+
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="description">Media Controls</string>
+
+    <string name="error_protected_content_extension_not_supported">The GL protected content extension is not supported.</string>
+    <string name="title_activity_camera_watch_setting">CameraWatchSettingActivity</string>
+    <string name="title_activity_camera_record_setting">CameraRecordSettingActivity</string>
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+
+
+</resources>

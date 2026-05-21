@@ -1,0 +1,17 @@
+<?xml version ="1.0" encoding ="utf-8"?><!--  Learn More about how to use App Actions: https://developer.android.com/guide/actions/index.html -->
+<network-security-config>
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="true">192.168.1.19</domain>
+        <domain includeSubdomains="true">cyrenaica-hp.cf</domain>
+        <domain includeSubdomains="true">90.119.149.165</domain>
+        <domain includeSubdomains="true">cyrenaica</domain>
+        <domain includeSubdomains="true">10.10.10.10</domain>
+        <domain includeSubdomains="true">11.11.11.11</domain>
+        <domain includeSubdomains="true">192.168.1.1/24</domain>
+        <domain includeSubdomains="true">192.168.4.1</domain>
+        <domain includeSubdomains="true">192.168.4.2</domain>
+        <domain includeSubdomains="true">192.168.1.208</domain>
+        <domain includeSubdomains="true">192.168.1.148</domain>
+        <domain includeSubdomains="true">127.0.0.1</domain>
+    </domain-config>
+</network-security-config>

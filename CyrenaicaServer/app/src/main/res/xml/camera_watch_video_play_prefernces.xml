@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        app:icon="@drawable/ic_onscreen_text_24_white"
+        app:key="show_on_screen_text_category"
+        app:title="@string/menu_camera_watch_video_play_option_category_label"
+        app:summary="@string/menu_camera_watch_video_play_option_category_summary">
+            <CheckBoxPreference
+                app:defaultValue="false"
+                app:key="cam_watch_video_play_by_ffmpeg"
+                app:title="@string/menu_camera_record_video_play_by_ffmpeg_title"
+                app:summary="@string/menu_camera_record_video_play_by_ffmpeg_summary"
+                app:summaryOn="@string/menu_camera_record_video_play_by_ffmpeg_on_summary" />
+
+            <CheckBoxPreference
+                app:defaultValue="true"
+                app:key="cam_watch_video_play_by_mjpeg"
+                app:title="@string/menu_camera_record_video_play_by_mjpeg_title"
+                app:summary="@string/menu_camera_record_video_play_by_mjpeg_summary"
+                app:summaryOn="@string/menu_camera_record_video_play_by_mjpeg_on_summary" />
+
+    </PreferenceCategory>
+
+</androidx.preference.PreferenceScreen>

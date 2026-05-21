@@ -1,0 +1,578 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".nodes.Cameras.CameraRecordActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/border_radius_white_bg_blue"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/id_camera_record_device_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:text="KITCHEN"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/id_camera_record_date_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="18/3/2025"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/id_camera_record_resolution_message_frame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal|center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/id_camera_record_video_source_size_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:text="@string/video_source_size_label" />
+
+                <Spinner
+                    android:id="@+id/id_camera_record_video_source_size_spinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:dropDownWidth="wrap_content"
+                    android:dropDownHeight="wrap_content" />
+
+                <Button
+                    android:id="@+id/id_camera_record_video_source_size_not_know_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:text="@string/button_don_not_know"
+                    android:textSize="10sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/id_camera_record_resolution_message_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/id_camera_record_video_source_resolution_msg_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:text="@string/video_source_size_not_know_message" />
+
+                <TextView
+                    android:id="@+id/id_camera_record_video_source_resolution_msg_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:text="480x320"
+                    android:textColor="#FF9800" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/id_camera_record_advanced_settings_frame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Base CardView -->
+            <LinearLayout
+                android:id="@+id/id_label_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/id_camera_record_advanced_settings_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/word_advanced_settings_cap"
+                    android:textColor="#ADA7A7"
+                    android:textSize="11sp" />
+
+                <ImageView
+                    android:id="@+id/id_camera_record_advanced_settings_expand_arrow"
+                    android:layout_width="20dp"
+                    android:layout_height="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="274dp"
+                    android:importantForAccessibility="no"
+                    app:srcCompat="@drawable/ic_expand_more_orange_24" />
+            </LinearLayout>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/id_camera_record_base_cardview"
+                style="@style/Base.CardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/id_label_layout">
+
+                <LinearLayout
+                    android:id="@+id/id_camera_record_is_hidden_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="5dp"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/id_camera_record_device_name_setting_label"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Device name text setting"
+                            android:textColor="#ADA7A7"
+                            android:textSize="11sp"
+                            android:visibility="gone" />
+
+                        <FrameLayout
+                            android:id="@+id/id_camera_record_device_name_font_settings_frame"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginBottom="2dp"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/id_camera_record_device_name_font_list_label"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:gravity="center"
+                                        android:text="@string/word_fonts_first_cap_small"
+                                        android:textSize="12sp" />
+
+                                    <Spinner
+                                        android:id="@+id/id_camera_record_device_name_font_list_spinner"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:dropDownWidth="wrap_content"
+                                        android:dropDownHeight="wrap_content" />
+
+                                    <TextView
+                                        android:id="@+id/id_camera_record_device_name_font_size_label"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:gravity="center"
+                                        android:text="@string/word_size_cap_small"
+                                        android:textSize="12sp" />
+
+                                    <Spinner
+                                        android:id="@+id/id_camera_record_device_name_font_size_spinner"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:dropDownWidth="wrap_content"
+                                        android:dropDownHeight="wrap_content" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/id_camera_record_device_name_font_color_label"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginEnd="10dp"
+                                        android:gravity="center"
+                                        android:paddingStart="5dp"
+                                        android:text="@string/word_text_color_cap_small"
+                                        android:textSize="12sp" />
+
+                                    <Spinner
+                                        android:id="@+id/id_camera_record_device_name_font_color_spinner"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1" />
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </FrameLayout>
+
+                        <View
+                            android:id="@+id/id_device_name_setting_divider"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="?android:attr/listDivider"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/id_camera_record_date_and_time_setting_label"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Date and time text setting"
+                            android:textColor="#ADA7A7"
+                            android:textSize="11sp"
+                            android:visibility="gone" />
+
+                        <FrameLayout
+                            android:id="@+id/id_camera_record_date_and_time_font_settings_frame"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="2dp"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/id_camera_record_date_and_time_font_list_label"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:layout_gravity="center"
+                                        android:gravity="center"
+                                        android:text="@string/word_fonts_first_cap_small"
+                                        android:textSize="12sp" />
+
+                                    <Spinner
+                                        android:id="@+id/id_camera_record_date_and_time_font_list_spinner"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:dropDownWidth="wrap_content"
+                                        android:dropDownHeight="wrap_content" />
+
+                                    <TextView
+                                        android:id="@+id/id_camera_record_date_and_time_font_size_label"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:gravity="center"
+                                        android:text="@string/word_size_cap_small"
+                                        android:textSize="12sp" />
+
+                                    <Spinner
+                                        android:id="@+id/id_camera_record_date_and_time_font_size_spinner"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:dropDownWidth="wrap_content"
+                                        android:dropDownHeight="wrap_content" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/id_camera_record_date_time_font_color_label"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginEnd="10dp"
+                                        android:gravity="center"
+                                        android:paddingStart="5dp"
+                                        android:text="@string/word_text_color_cap_small"
+                                        android:textSize="12sp" />
+
+                                    <Spinner
+                                        android:id="@+id/id_camera_record_date_and_time_font_color_spinner"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:dropDownWidth="wrap_content"
+                                        android:dropDownHeight="wrap_content" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                        </FrameLayout>
+
+                        <View
+                            android:id="@+id/id_date_time_setting_divider"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="?android:attr/listDivider"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/id_logo_settings_label"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Logo setting"
+                            android:textColor="#ADA7A7"
+                            android:textSize="11sp"
+                            android:visibility="gone" />
+
+                        <FrameLayout
+                            android:id="@+id/id_camera_record_logo_settings_frame"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/id_camera_record_logo_label"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="10dp"
+                                    android:gravity="center_vertical"
+                                    android:text="@string/word_pic_logo_cap_small" />
+
+                                <ImageView
+                                    android:id="@+id/id_camera_record_load_logo_icon"
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:layout_marginEnd="10dp"
+                                    android:tag="NO"
+                                    app:srcCompat="@drawable/ic_add_image_green_24" />
+
+                                <TextView
+                                    android:id="@+id/id_camera_record_logo_position_label"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="10dp"
+                                    android:text="@string/word_pic_position_cap_small" />
+
+                                <Spinner
+                                    android:id="@+id/id_camera_record_logo_position_spinner"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="10dp"
+                                    android:dropDownWidth="wrap_content"
+                                    android:dropDownHeight="wrap_content" />
+
+
+                            </LinearLayout>
+
+                        </FrameLayout>
+
+                        <View
+                            android:id="@+id/id_save_setting_divider"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="?android:attr/listDivider" />
+
+                        <FrameLayout
+                            android:id="@+id/id_camera_record_save_settings_frame"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <Button
+                                    android:id="@+id/id_camera_record_save_settings_save_btn"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="35dp"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_marginEnd="10dp"
+                                    android:text="@string/button_save"
+                                    android:textSize="12sp" />
+
+                                <Button
+                                    android:id="@+id/id_camera_record_save_settings_cancel_btn"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="35dp"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_marginEnd="10dp"
+                                    android:text="@string/button_cancel"
+                                    android:textSize="12sp" />
+                            </LinearLayout>
+                        </FrameLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.media3.ui.PlayerView
+            android:id="@+id/id_camera_record_player_view"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            app:resize_mode="fit"
+            app:surface_type="surface_view"
+            app:use_controller="true">
+
+        </androidx.media3.ui.PlayerView>
+
+        <FrameLayout
+            android:id="@+id/id_camera_record_control_frame"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:foregroundGravity="center"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/id_video_record_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="31dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    app:srcCompat="@drawable/ic_media_record_off_red_24" />
+
+                <ImageView
+                    android:id="@+id/id_video_stop_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="31dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    app:srcCompat="@drawable/ic_media_stop_24" />
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/id_camera_record_files_control_frame"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/id_camera_record_files_control_message"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center_horizontal"
+                    android:text="Do you like watching the recorded video now?" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/id_camera_record_watch_hls_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="10dp"
+                        android:gravity="center|center_horizontal"
+                        android:text="Watch Recorded Video" />
+
+                    <Button
+                        android:id="@+id/id_camera_record_no_watch_hls_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="20dp"
+                        android:text="No" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

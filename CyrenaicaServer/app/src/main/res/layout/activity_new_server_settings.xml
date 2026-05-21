@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".server.NewServerSettings">
+
+    <TextView
+        android:id="@+id/id_new_server_settings_page_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/anton"
+        android:text="@string/new_server_settings_page_title"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/id_new_server_settings_scroll_container"
+        android:layout_width="match_parent"
+        android:layout_height="690dp"
+        android:layout_marginTop="32dp"
+        android:foregroundGravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_new_server_settings_page_title">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="100dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:id="@+id/id_new_server_settings_field_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/id_new_server_settings_ap_setting_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="120dp"
+                    android:layout_marginBottom="30dp"
+                    android:fontFamily="@font/bayon"
+                    android:text="@string/new_server_settings_ap_setting_label"
+                    android:textColor="@color/colorGrey"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/id_new_server_settings_ap_setting_tip"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/sansitaswashed"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="@string/new_server_settings_ap_setting_tip"
+                    android:textSize="16sp" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/id_file_name_layout"
+                    style="Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:hint="@string/new_server_settings_ap_channel_input_hint"
+                    android:textColorHint="@color/white"
+                    app:boxBackgroundColor="@color/black"
+                    app:boxBackgroundMode="outline"
+                    app:boxCornerRadiusBottomEnd="4dp"
+                    app:boxCornerRadiusBottomStart="4dp"
+                    app:boxCornerRadiusTopEnd="4dp"
+                    app:boxCornerRadiusTopStart="4dp"
+                    app:boxStrokeColor="@color/text_input_layout_stroke_white"
+                    app:boxStrokeErrorColor="@color/error"
+                    app:counterEnabled="false"
+                    app:counterOverflowTextAppearance="@style/Base.TextAppearance.MaterialComponents.Subtitle2"
+                    app:counterTextAppearance="@style/Base.TextAppearance.MaterialComponents.Subtitle2"
+                    app:errorEnabled="true"
+                    app:errorTextAppearance="@style/Base.TextAppearance.MaterialComponents.Subtitle2"
+                    app:errorTextColor="@color/design_default_color_error"
+                    app:helperText="@string/new_server_settings_ap_channel_input_helper"
+                    app:hintTextAppearance="@style/MaterialCustomInputLayoutAppearance">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/id_file_name_input"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:inputType="number"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="5dp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/id_new_server_settings_ap_max_clients_layout"
+                    style="Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:hint="@string/new_server_settings_ap_max_clients_input_hint"
+                    android:textColorHint="@color/white"
+                    app:boxBackgroundColor="@color/black"
+                    app:boxBackgroundMode="outline"
+                    app:boxCornerRadiusBottomEnd="4dp"
+                    app:boxCornerRadiusBottomStart="4dp"
+                    app:boxCornerRadiusTopEnd="4dp"
+                    app:boxCornerRadiusTopStart="4dp"
+                    app:boxStrokeColor="@color/text_input_layout_stroke_white"
+                    app:boxStrokeErrorColor="@color/error"
+                    app:counterEnabled="false"
+                    app:counterOverflowTextAppearance="@style/Base.TextAppearance.MaterialComponents.Subtitle2"
+                    app:counterTextAppearance="@style/Base.TextAppearance.MaterialComponents.Subtitle2"
+                    app:errorEnabled="true"
+                    app:errorTextAppearance="@style/Base.TextAppearance.MaterialComponents.Subtitle2"
+                    app:errorTextColor="@color/design_default_color_error"
+                    app:helperText="@string/new_server_settings_ap_max_clients_input_helper"
+                    app:hintTextAppearance="@style/MaterialCustomInputLayoutAppearance">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/id_new_server_settings_ap_max_clients_input"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:inputType="number"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="5dp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <Switch
+                    android:id="@+id/id_new_server_settings_ap_use_static_ip_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="@string/new_server_settings_ap_use_static_ip_label"
+                    tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/id_new_server_settings_ap_static_ip_layout"
+                    style="Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:hint="@string/new_server_settings_ap_static_ip_input_hint"
+                    android:textColorHint="@color/white"
+                    android:visibility="gone"
+                    app:boxBackgroundColor="@color/black"
+                    app:boxBackgroundMode="outline"
+                    app:boxCornerRadiusBottomEnd="4dp"
+                    app:boxCornerRadiusBottomStart="4dp"
+                    app:boxCornerRadiusTopEnd="4dp"
+                    app:boxCornerRadiusTopStart="4dp"
+                    app:boxStrokeColor="@color/text_input_layout_stroke_white"
+                    app:boxStrokeErrorColor="@color/error"
+                    app:counterEnabled="false"
+                    app:counterOverflowTextAppearance="@style/Base.TextAppearance.MaterialComponents.Subtitle2"
+                    app:counterTextAppearance="@style/Base.TextAppearance.MaterialComponents.Subtitle2"
+                    app:errorEnabled="true"
+                    app:errorTextAppearance="@style/Base.TextAppearance.MaterialComponents.Subtitle2"
+                    app:errorTextColor="@color/design_default_color_error"
+                    app:helperText="@string/new_server_settings_ap_static_ip_input_helper"
+                    app:hintTextAppearance="@style/MaterialCustomInputLayoutAppearance">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/id_new_server_settings_ap_static_ip_input"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:inputType="text"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="5dp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:id="@+id/id_new_server_settings_sta_setting_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="20dp"
+                    android:fontFamily="@font/bayon"
+                    android:text="@string/new_server_settings_sta_setting_label"
+                    android:textColor="@color/colorGrey"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/id_new_server_settings_sta_setting_tip"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/sansitaswashed"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="@string/new_server_settings_sta_setting_tip"
+                    android:textSize="16sp" />
+
+                <Switch
+                    android:id="@+id/id_new_server_settings_sta_use_static_ip_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="@string/new_server_settings_sta_use_static_ip_label"
+                    tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/id_new_server_settings_sta_static_ip_layout"
+                    style="Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:hint="@string/new_server_settings_sta_static_ip_input_hint"
+                    android:textColorHint="@color/white"
+                    android:visibility="gone"
+                    app:boxBackgroundColor="@color/black"
+                    app:boxBackgroundMode="outline"
+                    app:boxCornerRadiusBottomEnd="4dp"
+                    app:boxCornerRadiusBottomStart="4dp"
+                    app:boxCornerRadiusTopEnd="4dp"
+                    app:boxCornerRadiusTopStart="4dp"
+                    app:boxStrokeColor="@color/text_input_layout_stroke_white"
+                    app:boxStrokeErrorColor="@color/error"
+                    app:counterEnabled="false"
+                    app:counterOverflowTextAppearance="@style/Base.TextAppearance.MaterialComponents.Subtitle2"
+                    app:counterTextAppearance="@style/Base.TextAppearance.MaterialComponents.Subtitle2"
+                    app:errorEnabled="true"
+                    app:errorTextAppearance="@style/Base.TextAppearance.MaterialComponents.Subtitle2"
+                    app:errorTextColor="@color/design_default_color_error"
+                    app:helperText="@string/new_server_settings_sta_static_ip_input_helper"
+                    app:hintTextAppearance="@style/MaterialCustomInputLayoutAppearance">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/id_new_server_settings_sta_static_ip_input"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:inputType="text"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="5dp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/id_new_server_settings_sta_gateway_layout"
+                    style="Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="20dp"
+                    android:hint="@string/new_server_settings_sta_gateway_input_hint"
+                    android:textColorHint="@color/white"
+                    android:visibility="gone"
+                    app:boxBackgroundColor="@color/black"
+                    app:boxBackgroundMode="outline"
+                    app:boxCornerRadiusBottomEnd="4dp"
+                    app:boxCornerRadiusBottomStart="4dp"
+                    app:boxCornerRadiusTopEnd="4dp"
+                    app:boxCornerRadiusTopStart="4dp"
+                    app:boxStrokeColor="@color/text_input_layout_stroke_white"
+                    app:boxStrokeErrorColor="@color/error"
+                    app:counterEnabled="false"
+                    app:counterOverflowTextAppearance="@style/Base.TextAppearance.MaterialComponents.Subtitle2"
+                    app:counterTextAppearance="@style/Base.TextAppearance.MaterialComponents.Subtitle2"
+                    app:errorEnabled="true"
+                    app:errorTextAppearance="@style/Base.TextAppearance.MaterialComponents.Subtitle2"
+                    app:errorTextColor="@color/design_default_color_error"
+                    app:helperText="@string/new_server_settings_sta_gateway_input_helper"
+                    app:hintTextAppearance="@style/MaterialCustomInputLayoutAppearance">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/id_new_server_settings_sta_gateway_input"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:inputType="text"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="5dp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:id="@+id/id_new_server_settings_dns_setting_message"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/sansitaswashed"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="@string/new_server_settings_sta_dns_tip"
+                    android:textColor="@color/colorOrange1"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/id_new_server_settings_error_msg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:gravity="center"
+                android:text="TextView"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/id_new_server_settings_modify_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="250dp"
+                android:text="@string/button_modify" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

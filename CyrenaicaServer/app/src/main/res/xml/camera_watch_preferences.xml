@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:title="@string/menu_camera_watch_preferences_camera_network_setting_title">
+
+    <PreferenceCategory
+        app:icon="@drawable/ic_connection_white_24"
+        app:key="network_category"
+        app:title="@string/menu_camera_watch_preferences_camera_network_setting_label"
+        app:summary="@string/menu_camera_watch_preferences_camera_network_setting_summary">
+
+        <CheckBoxPreference
+            app:defaultValue="true"
+            app:key="cam_watch_network_http"
+            app:summary="@string/menu_camera_watch_preferences_camera_network_http_summary"
+            app:summaryOff="@string/menu_camera_watch_preferences_camera_network_http_summary"
+            app:summaryOn="@string/menu_camera_watch_preferences_camera_network_http_on_summary"
+            app:title="@string/menu_camera_watch_preferences_camera_network_http_label" />
+
+        <CheckBoxPreference
+            app:defaultValue="false"
+            app:key="cam_watch_network_udp"
+            app:summary="@string/menu_camera_watch_preferences_camera_network_udp_summary"
+            app:summaryOff="@string/menu_camera_watch_preferences_camera_network_udp_summary"
+            app:summaryOn="@string/menu_camera_watch_preferences_camera_network_udp_on_summary"
+            app:title="@string/menu_camera_watch_preferences_camera_network_udp_label" />
+
+        <EditTextPreference
+            app:allowDividerBelow="false"
+            app:defaultValue="80"
+            app:dialogMessage="@string/menu_camera_watch_connection_port_summary"
+            app:dialogTitle="@string/menu_camera_watch_connection_port_title"
+            app:key="cam_watch_connection_port"
+            app:negativeButtonText="Cansel"
+            app:positiveButtonText="Set"
+            app:summary="@string/menu_camera_watch_connection_port_summary"
+            app:title="@string/menu_camera_watch_connection_port_title" />
+
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        app:icon="@drawable/ic_recognize_white_24"
+        app:key="activate_face_detection_category"
+        app:title="@string/menu_camera_watch_preferences_camera_face_detection_setting_label"
+        app:summary="@string/menu_camera_watch_preferences_camera_face_detection_setting_summary">
+
+        <SwitchPreferenceCompat
+            app:defaultValue="false"
+            app:key="activate_face_detection_switch"
+            app:title="@string/menu_camera_watch_preferences_camera_activate_f_detection_label"
+            app:summary="@string/menu_camera_watch_preferences_camera_activate_f_detection_summary"
+            app:summaryOn="@string/menu_camera_watch_preferences_camera_activate_f_detection_on_summary"/>
+
+        <Preference
+            app:title="@string/menu_camera_watch_preferences_face_recognize_setting_label"
+            app:summary="@string/menu_camera_watch_preferences_face_recognize_setting_summary"
+            app:fragment="com.cyrenaica.cyrenaicaserver.nodes.Cameras.Settings.CameraWatchSettingActivity$CameraWatchFaceRecognizePreferencesFragment"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        app:icon="@drawable/ic_onscreen_text_24_white"
+        app:key="show_on_screen_text_category"
+        app:title="@string/menu_camera_watch_preferences_camera_show_onscreen_text_setting_label"
+        app:summary="@string/menu_camera_watch_preferences_camera_show_onscreen_text_setting_summary">
+
+        <SwitchPreferenceCompat
+            app:key="show_onscreen_text_switch"
+            app:defaultValue="false"
+            app:title="@string/menu_camera_watch_preferences_camera_show_onscreen_text_label"
+            app:summary="@string/menu_camera_watch_preferences_camera_show_onscreen_text_summary"
+            app:summaryOn="@string/menu_camera_watch_preferences_camera_show_onscreen_text_on_summary"/>
+
+
+    </PreferenceCategory>
+
+    <Preference
+        app:title="@string/menu_camera_watch_video_play_option_setting_label"
+        app:summary="@string/menu_camera_watch_video_play_option_setting_summary"
+        app:fragment="com.cyrenaica.cyrenaicaserver.nodes.Cameras.Settings.CameraWatchSettingActivity$CameraWatchVideoPlayOptionsPreferencesFragment"/>
+
+
+
+
+
+</PreferenceScreen>

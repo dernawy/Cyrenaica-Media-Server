@@ -1,0 +1,45 @@
+<resources>
+    <!-- Reply Preference -->
+    <string-array name="language_entries">
+        <item>العربية</item>
+        <item>English</item>
+        <item>Fraçaise</item>
+    </string-array>
+
+    <string-array name="language_values">
+        <item>ar</item>
+        <item>en</item>
+        <item>fr</item>
+    </string-array>
+
+
+    <string-array name="temperature_entries">
+        <item>Celsius</item>
+        <item>Fahrenheit</item>
+    </string-array>
+
+    <string-array name="temperature_values">
+        <item>temp_celsius</item>
+        <item>temp_fahrenheit</item>
+    </string-array>
+
+    <string-array name="press_entries">
+        <item>Millibar</item>
+        <item>Bar</item>
+    </string-array>
+
+    <string-array name="press_values">
+        <item>press_millibar</item>
+        <item>press_bar</item>
+    </string-array>
+    <!-- Reply Preference -->
+    <string-array name="reply_entries">
+        <item>Reply</item>
+        <item>Reply to all</item>
+    </string-array>
+
+    <string-array name="reply_values">
+        <item>reply</item>
+        <item>reply_all</item>
+    </string-array>
+</resources>

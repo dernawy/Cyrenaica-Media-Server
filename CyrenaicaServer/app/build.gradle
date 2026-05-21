@@ -1,0 +1,107 @@
+plugins {
+    alias(libs.plugins.android.application)
+}
+
+android {
+    namespace 'com.cyrenaica.cyrenaicaserver'
+    compileSdk 35
+    useLibrary 'org.apache.http.legacy'
+
+    defaultConfig {
+        applicationId "com.cyrenaica.cyrenaicaserver"
+        minSdk 24
+        targetSdk 35
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+
+    buildFeatures {
+        viewBinding true
+    }
+
+    sourceSets {
+        main {
+            assets.srcDirs = ['src/main/assets/']
+        }
+    }
+    dependenciesInfo {
+        includeInApk true
+    }
+}
+
+dependencies {
+
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation libs.androidx.media3.exoplayer.rtsp
+    implementation libs.play.services.vision.common
+    implementation libs.http
+    implementation files('libs/sun-common-server.jar')
+    implementation libs.appcompat
+    implementation libs.material
+    implementation libs.activity
+    implementation libs.volley
+    implementation libs.androidx.navigation.compose
+    implementation libs.navigation.fragment
+    implementation libs.navigation.ui
+    implementation libs.androidx.navigation.dynamic.features.fragment
+    implementation libs.java.android.websocket.client
+    implementation libs.constraintlayout
+
+    implementation project(':openCV')
+
+    implementation libs.tensorflow.core.platform
+    implementation libs.android.database.sqlcipher
+    implementation libs.sqlite
+    implementation libs.play.services.location
+    implementation libs.aescrypt
+    implementation libs.navigation.runtime
+    implementation libs.navigation.ui
+    implementation libs.navigation.fragment
+    implementation libs.ffmpeg.kit.full
+    implementation libs.androidx.media3.ui
+    implementation libs.androidx.media3.effect
+    implementation libs.androidx.media3.transformer
+    implementation libs.androidx.media3.common
+    implementation libs.androidx.media3.muxer
+    implementation libs.androidx.media3.exoplayer
+    implementation libs.androidx.media3.exoplayer.dash
+    implementation libs.androidx.media3.exoplayer.hls
+    implementation libs.gson
+    implementation libs.face.detection
+    implementation libs.tensorflow.lite.gpu
+    implementation libs.tensorflow.lite
+    implementation libs.tensorflow.lite.task.vision
+    implementation libs.androidx.media3.container
+    implementation libs.androidx.media3.cast
+    implementation libs.androidx.media3.effect
+    implementation libs.androidx.media3.transformer
+    implementation libs.androidx.media3.extractor
+    implementation libs.androidx.media3.datasource.okhttp
+    implementation libs.androidx.media3.exoplayer.smoothstreaming
+    implementation libs.androidx.camera.core
+    implementation libs.androidx.camera.camera2
+    implementation libs.androidx.camera.lifecycle
+    implementation libs.androidx.camera.view
+    implementation libs.androidx.preference
+
+    testImplementation libs.junit
+    androidTestImplementation libs.androidx.navigation.testing
+    androidTestImplementation libs.ext.junit
+    androidTestImplementation libs.espresso.core
+}

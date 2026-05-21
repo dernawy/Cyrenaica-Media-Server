@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/id_camera_record_dropdown_element"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:gravity="center"
+    android:padding="10dp"
+    android:text="Select"
+    android:textAlignment="center"
+    android:textColor="@color/colorOrange1"
+    android:theme="@style/LanguageSpinnerTheme" />

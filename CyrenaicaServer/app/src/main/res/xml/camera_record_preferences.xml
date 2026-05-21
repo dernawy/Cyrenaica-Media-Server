@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        app:icon="@drawable/ic_activate_video_record_24_white"
+        app:key="activate_video_record"
+        app:title="@string/menu_camera_record_activate_video_record_category_title"
+        app:summary="@string/menu_camera_record_activate_video_record_category_summary">
+
+        <SwitchPreferenceCompat
+            app:defaultValue="false"
+            app:key="activate_video_record_switch"
+            app:title="@string/menu_camera_record_activate_video_record_title"
+            app:summary="@string/menu_camera_record_activate_video_record_summary"
+            app:summaryOn="@string/menu_camera_record_activate_video_record_on_summary"/>
+
+        <SwitchPreferenceCompat
+            app:defaultValue="false"
+            app:key="activate_video_record_and_play_switch"
+            app:title="@string/menu_camera_record_activate_video_record_and_play_title"
+            app:summary="@string/menu_camera_record_activate_video_record_and_play_title"
+            app:summaryOn="@string/menu_camera_record_activate_video_record_and_play_on_summary" />
+
+        <CheckBoxPreference
+            app:defaultValue="false"
+            app:key="cam_record_and_play_by_ffmpeg"
+            app:title="@string/menu_camera_record_video_record_and_play_by_ffmpeg_title"
+            app:summary="@string/menu_camera_record_video_record_and_play_by_ffmpeg_summary"
+            app:summaryOn="@string/menu_camera_record_video_record_and_play_by_ffmpeg_on_summary" />
+
+
+    </PreferenceCategory>
+
+</androidx.preference.PreferenceScreen>

@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".server.SecurityCheckActivity">
+
+  <LinearLayout
+      android:id="@+id/id_network_status_bar"
+      android:layout_width="match_parent"
+      android:layout_height="41dp"
+      android:gravity="center"
+      android:orientation="horizontal"
+      android:paddingStart="10dp"
+      android:paddingEnd="10dp"
+      android:visibility="gone"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent">
+
+    <TextView
+        android:id="@+id/id_network_connection_status_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/security_check_connected_to_wifi_label" />
+
+    <TextView
+        android:id="@+id/id_network_connection_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/unknown_field_small" />
+
+    <TextView
+        android:id="@+id/id_sockets_status_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/security_check_connected_to_sockets_label" />
+
+    <TextView
+        android:id="@+id/id_sockets_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/unknown_field_small" />
+  </LinearLayout>
+
+  <ScrollView
+      android:id="@+id/id_network_settings_scroll_view"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/id_network_status_bar"
+      app:layout_constraintVertical_bias="0.120000005">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+      <TextView
+          android:id="@+id/id_security_page_title"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="30dp"
+          android:layout_marginBottom="10dp"
+          android:fontFamily="@font/anton"
+          android:text="@string/security_page_title"
+          android:textSize="26sp" />
+
+      <LinearLayout
+          android:id="@+id/id_security_page_fields_layout"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"
+          android:gravity="center"
+          android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/id_ap_ssid_field_layout"
+            style="Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="5dp"
+            android:enabled="false"
+            android:hint="@string/wifi_setup_default_ssid_field_hint"
+            android:textColorHint="@color/white"
+            app:boxBackgroundColor="@color/black"
+            app:boxBackgroundMode="outline"
+            app:boxCornerRadiusBottomEnd="4dp"
+            app:boxCornerRadiusBottomStart="4dp"
+            app:boxCornerRadiusTopEnd="4dp"
+            app:boxCornerRadiusTopStart="4dp"
+            app:boxStrokeColor="@color/text_input_layout_stroke_white"
+            app:boxStrokeErrorColor="@color/error"
+            app:counterEnabled="false"
+            app:counterMaxLength="40"
+            app:counterOverflowTextAppearance="@style/Base.TextAppearance.MaterialComponents.Subtitle2"
+            app:counterTextAppearance="@style/Base.TextAppearance.MaterialComponents.Subtitle2"
+            app:errorEnabled="true"
+            app:errorTextAppearance="@style/Base.TextAppearance.MaterialComponents.Subtitle2"
+            app:errorTextColor="@color/design_default_color_error"
+            app:helperText="@string/wifi_setup_ssid_no_change_field_helper"
+            app:hintTextAppearance="@style/MaterialCustomInputLayoutAppearance">
+
+          <com.google.android.material.textfield.TextInputEditText
+              android:id="@+id/id_ap_ssid_input_field"
+              android:layout_width="match_parent"
+              android:layout_height="45dp"
+              android:inputType="textNoSuggestions"
+              android:paddingTop="10dp"
+              android:paddingBottom="5dp" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/id_ap_pass_field_layout"
+            style="Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:hint="@string/wifi_setup_change_default_password_field_hint"
+            android:textColorHint="@color/white"
+            app:boxBackgroundColor="@color/black"
+            app:boxBackgroundMode="outline"
+            app:boxCornerRadiusBottomEnd="4dp"
+            app:boxCornerRadiusBottomStart="4dp"
+            app:boxCornerRadiusTopEnd="4dp"
+            app:boxCornerRadiusTopStart="4dp"
+            app:boxStrokeColor="@color/text_input_layout_stroke_white"
+            app:boxStrokeErrorColor="@color/error"
+            app:counterEnabled="true"
+            app:counterMaxLength="64"
+            app:counterOverflowTextAppearance="@style/Base.TextAppearance.MaterialComponents.Subtitle2"
+            app:counterTextAppearance="@style/Base.TextAppearance.MaterialComponents.Subtitle2"
+            app:endIconMode="password_toggle"
+            app:endIconTint="@color/white"
+            app:errorEnabled="true"
+            app:errorTextAppearance="@style/Base.TextAppearance.MaterialComponents.Subtitle2"
+            app:errorTextColor="@color/design_default_color_error"
+            app:helperText="@string/wifi_setup_password_field_helper"
+            app:hintTextAppearance="@style/MaterialCustomInputLayoutAppearance">
+
+          <com.google.android.material.textfield.TextInputEditText
+              android:id="@+id/id_ap_pass_input_field"
+              android:layout_width="match_parent"
+              android:layout_height="45dp"
+              android:inputType="textPassword"
+              android:paddingTop="10dp"
+              android:paddingBottom="5dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/id_router_ssid_field_layout"
+            style="Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:hint="@string/wifi_setup_router_ssid_field_hint"
+            android:textColorHint="@color/white"
+            app:boxBackgroundColor="@color/black"
+            app:boxBackgroundMode="outline"
+            app:boxCornerRadiusBottomEnd="4dp"
+            app:boxCornerRadiusBottomStart="4dp"
+            app:boxCornerRadiusTopEnd="4dp"
+            app:boxCornerRadiusTopStart="4dp"
+            app:boxStrokeColor="@color/text_input_layout_stroke_white"
+            app:boxStrokeErrorColor="@color/error"
+            app:counterEnabled="true"
+            app:counterMaxLength="40"
+            app:counterOverflowTextAppearance="@style/Base.TextAppearance.MaterialComponents.Subtitle2"
+            app:counterTextAppearance="@style/Base.TextAppearance.MaterialComponents.Subtitle2"
+            app:errorEnabled="true"
+            app:errorTextAppearance="@style/Base.TextAppearance.MaterialComponents.Subtitle2"
+            app:errorTextColor="@color/design_default_color_error"
+            app:helperText="@string/wifi_setup_router_ssid_field_helper"
+            app:hintTextAppearance="@style/MaterialCustomInputLayoutAppearance">
+
+          <com.google.android.material.textfield.TextInputEditText
+              android:id="@+id/id_router_ssid_input_field"
+              android:layout_width="match_parent"
+              android:layout_height="45dp"
+              android:inputType="textNoSuggestions"
+              android:paddingTop="10dp"
+              android:paddingBottom="5dp" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/id_router_pass_field_layout"
+            style="Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:hint="@string/wifi_setup_router_password_field_hint"
+            android:textColorHint="@color/white"
+            app:boxBackgroundColor="@color/black"
+            app:boxBackgroundMode="outline"
+            app:boxCornerRadiusBottomEnd="4dp"
+            app:boxCornerRadiusBottomStart="4dp"
+            app:boxCornerRadiusTopEnd="4dp"
+            app:boxCornerRadiusTopStart="4dp"
+            app:boxStrokeColor="@color/text_input_layout_stroke_white"
+            app:boxStrokeErrorColor="@color/error"
+            app:counterEnabled="true"
+            app:counterMaxLength="64"
+            app:counterOverflowTextAppearance="@style/Base.TextAppearance.MaterialComponents.Subtitle2"
+            app:counterTextAppearance="@style/Base.TextAppearance.MaterialComponents.Subtitle2"
+            app:endIconMode="password_toggle"
+            app:endIconTint="@color/white"
+            app:errorEnabled="true"
+            app:errorTextAppearance="@style/Base.TextAppearance.MaterialComponents.Subtitle2"
+            app:errorTextColor="@color/design_default_color_error"
+            app:helperText="@string/wifi_setup_password_field_helper">
+
+          <com.google.android.material.textfield.TextInputEditText
+              android:id="@+id/id_router_pass_input_field"
+              android:layout_width="match_parent"
+              android:layout_height="45dp"
+              android:inputType="textPassword"
+              android:paddingTop="10dp"
+              android:paddingBottom="5dp" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+      </LinearLayout>
+
+      <TextView
+          android:id="@+id/id_wifi_setup_end_message"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"
+          android:gravity="center"
+          android:paddingStart="10dp"
+          android:paddingEnd="10dp"
+          android:visibility="gone" />
+
+      <Button
+          android:id="@+id/id_security_page_tests_save_btn"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="30dp"
+          android:layout_marginBottom="50dp"
+          android:text="@string/button_save" />
+
+      <Button
+          android:id="@+id/id_move_button"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/terminate_button"
+          android:visibility="gone" />
+
+    </LinearLayout>
+
+
+  </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

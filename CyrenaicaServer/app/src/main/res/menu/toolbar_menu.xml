@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/search"
+        android:title="@string/toolbar_search_icon_label"
+        android:icon="@drawable/ic_search_24"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/add_new_server"
+        android:title="@string/toolbar_add_new_server_menu_item_label"/>
+
+    <item
+        android:id="@+id/add_new_device"
+        android:title="@string/toolbar_add_new_device_menu_item_label"/>
+
+    <item
+        android:id="@+id/view_installed_servers"
+        android:title="@string/toolbar_view_installed_servers_menu_item_label"/>
+
+    <item
+        android:id="@+id/view_installed_devices"
+        android:title="@string/toolbar_view_installed_devices_menu_item_label"/>
+
+    <item
+        android:id="@+id/settings"
+        android:title="@string/toolbar_settings_menu_item_label"/>
+
+</menu>

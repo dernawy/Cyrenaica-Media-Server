@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".database.databaseManager.DatabaseSetup">
+
+    <LinearLayout
+        android:id="@+id/id_db_setup_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            app:srcCompat="@drawable/sqlit_logo" />
+
+        <TextView
+            android:id="@+id/id_db_setup_page_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="@string/database_setup_page_title"
+            android:textSize="22sp" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/id_db_setup_scroll_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="150dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_db_setup_header">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="vertical">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/id_db_cipher_layout"
+                    style="Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:hint="@string/database_setup_cipher_hint"
+                    android:textColorHint="@color/white"
+                    app:boxBackgroundColor="@color/black"
+                    app:boxBackgroundMode="outline"
+                    app:boxCornerRadiusBottomEnd="4dp"
+                    app:boxCornerRadiusBottomStart="4dp"
+                    app:boxCornerRadiusTopEnd="4dp"
+                    app:boxCornerRadiusTopStart="4dp"
+                    app:boxStrokeColor="@color/text_input_layout_stroke_white"
+                    app:boxStrokeErrorColor="@color/error"
+                    app:counterEnabled="false"
+                    app:counterOverflowTextAppearance="@style/Base.TextAppearance.MaterialComponents.Subtitle2"
+                    app:counterTextAppearance="@style/Base.TextAppearance.MaterialComponents.Subtitle2"
+                    app:errorEnabled="true"
+                    app:errorTextAppearance="@style/Base.TextAppearance.MaterialComponents.Subtitle2"
+                    app:errorTextColor="@color/design_default_color_error"
+                    app:helperText="@string/database_setup_cipher_helper"
+                    app:hintEnabled="true"
+                    app:hintTextAppearance="@style/CustomInputTextAppearance">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/id_db_cipher_input"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:inputType="text"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="5dp"
+                        android:textColorHighlight="@android:color/white" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/id_db_password_layout"
+                    style="Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:hint="@string/database_setup_password_hint"
+                    android:textColorHint="@color/white"
+                    app:boxBackgroundColor="@color/black"
+                    app:boxBackgroundMode="outline"
+                    app:boxCornerRadiusBottomEnd="4dp"
+                    app:boxCornerRadiusBottomStart="4dp"
+                    app:boxCornerRadiusTopEnd="4dp"
+                    app:boxCornerRadiusTopStart="4dp"
+                    app:boxStrokeColor="@color/text_input_layout_stroke_white"
+                    app:boxStrokeErrorColor="@color/error"
+                    app:counterEnabled="false"
+                    app:counterOverflowTextAppearance="@style/Base.TextAppearance.MaterialComponents.Subtitle2"
+                    app:counterTextAppearance="@style/Base.TextAppearance.MaterialComponents.Subtitle2"
+                    app:errorEnabled="true"
+                    app:errorTextAppearance="@style/Base.TextAppearance.MaterialComponents.Subtitle2"
+                    app:errorTextColor="@color/design_default_color_error"
+                    app:helperText="@string/database_setup_password_helper"
+                    app:hintTextAppearance="@style/MaterialCustomInputLayoutAppearance">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/id_db_password_input"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:inputType="text"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="5dp"
+                        android:textColorHighlight="@android:color/white" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/id_db_setup_save_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/button_database_setup" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/id_db_setup_end_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/id_db_setup_end_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView" />
+
+        <Button
+            android:id="@+id/id_db_setup_end_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/terminate_button" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

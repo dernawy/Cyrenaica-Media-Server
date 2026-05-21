@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        app:icon="@drawable/ic_connection_white_24"
+        app:key="face_recognize_measurements"
+        app:title="@string/menu_camera_watch_face_recognize_preferences_edit_measurements_setting_label"
+        app:summary="@string/menu_camera_watch_face_recognize_preferences_edit_measurements_setting_summary">
+
+        <EditTextPreference
+            app:key="face_recognize_face_scale_width"
+            app:title="@string/menu_camera_watch_face_recognize_preferences_edit_measurements_face_scale_width_title"
+            app:summary="@string/menu_camera_watch_face_recognize_preferences_edit_measurements_face_scale_width_summary"
+            app:dialogTitle="@string/menu_camera_watch_face_recognize_preferences_edit_measurements_face_scale_width_title"
+            app:dialogMessage="@string/menu_camera_watch_face_recognize_preferences_edit_measurements_face_scale_width_summary"
+            app:defaultValue="112"
+            app:positiveButtonText="Set"
+            app:negativeButtonText="Cansel"/>
+
+        <EditTextPreference
+            app:key="face_recognize_face_scale_height"
+            app:title="@string/menu_camera_watch_face_recognize_preferences_edit_measurements_face_scale_height_title"
+            app:summary="@string/menu_camera_watch_face_recognize_preferences_edit_measurements_face_scale_height_summary"
+            app:dialogTitle="@string/menu_camera_watch_face_recognize_preferences_edit_measurements_face_scale_height_title"
+            app:dialogMessage="@string/menu_camera_watch_face_recognize_preferences_edit_measurements_face_scale_height_summary"
+            app:defaultValue="112"
+            app:positiveButtonText="Set"
+            app:negativeButtonText="Cansel"/>
+
+        <EditTextPreference
+            app:key="face_recognize_face_scale_factor"
+            app:title="@string/menu_camera_watch_face_recognize_preferences_edit_measurements_face_scale_factor_title"
+            app:summary="@string/menu_camera_watch_face_recognize_preferences_edit_measurements_face_scale_factor_summary"
+            app:dialogTitle="@string/menu_camera_watch_face_recognize_preferences_edit_measurements_face_scale_factor_title"
+            app:dialogMessage="@string/menu_camera_watch_face_recognize_preferences_edit_measurements_face_scale_factor_summary"
+            app:defaultValue="1.2"
+            app:positiveButtonText="Set"
+            app:negativeButtonText="Cansel"/>
+
+        <EditTextPreference
+            app:key="face_recognize_face_min_neighbors"
+            app:title="@string/menu_camera_watch_face_recognize_preferences_edit_measurements_min_neighbors_title"
+            app:summary="@string/menu_camera_watch_face_recognize_preferences_edit_measurements_min_neighbors_summary"
+            app:dialogTitle="@string/menu_camera_watch_face_recognize_preferences_edit_measurements_min_neighbors_title"
+            app:dialogMessage="@string/menu_camera_watch_face_recognize_preferences_edit_measurements_min_neighbors_summary"
+            app:defaultValue="1.2"
+            app:positiveButtonText="Set"
+            app:negativeButtonText="Cansel"/>
+
+        <EditTextPreference
+            app:key="face_recognize_recognize_flags"
+            app:title="@string/menu_camera_watch_face_recognize_preferences_edit_measurements_recognize_flags_title"
+            app:summary="@string/menu_camera_watch_face_recognize_preferences_edit_measurements_recognize_flags_summary"
+            app:dialogTitle="@string/menu_camera_watch_face_recognize_preferences_edit_measurements_recognize_flags_title"
+            app:dialogMessage="@string/menu_camera_watch_face_recognize_preferences_edit_measurements_recognize_flags_summary"
+            app:defaultValue="1.2"
+            app:positiveButtonText="Set"
+            app:negativeButtonText="Cansel"/>
+    </PreferenceCategory>
+
+</androidx.preference.PreferenceScreen>

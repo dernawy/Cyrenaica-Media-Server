@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="light_blue_600">#FF039BE5</color>
+    <color name="light_blue_900">#FF01579B</color>
+    <color name="light_blue_A200">#FF40C4FF</color>
+    <color name="light_blue_A400">#FF00B0FF</color>
+    <color name="black_overlay">#66000000</color>
+    <color name="success">#FF058701</color>
+    <color name="error">#FFE40F0F</color>
+    <color name="orange">#F48225</color>
+    <color name="colorOrange1">#e27f0d</color>
+    <color name="colorOrange2">#ed9f45</color>
+    <color name="colorOrange3">#f4b267</color>
+    <color name="warning">#FFEB3B</color>
+    <color name="colorGrey">#A29E9E</color>
+    <color name="switch_red">#B10202</color>
+    <color name="switch_green">#166D02</color>
+    <color name="picker_background">#ff7c7c7c</color>
+    <color name="ffmpeg_red">#B10202</color>
+    <color name="ffmpeg_orange">#F48225</color>
+    <color name="ffmpeg_yellow">#FFEB3B</color>
+    <color name="ffmpeg_grey">#A29E9E</color>
+    <color name="ffmpeg_green">#166D02</color>
+    <color name="ffmpeg_blue">#042DDE</color>
+    <color name="ffmpeg_white">#FFFFFF</color>
+    <color name="ffmpeg_black">#000000</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="purple_500">#FF6200EE</color>
+</resources>

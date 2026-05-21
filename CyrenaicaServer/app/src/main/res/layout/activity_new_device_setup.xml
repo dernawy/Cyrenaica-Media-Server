@@ -1,0 +1,504 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:textAlignment="center"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    tools:context=".server.AddNewServer">
+
+    <TextView
+        android:id="@+id/id_add_device_page_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal|center_vertical"
+        android:padding="10dp"
+        android:text="@string/add_new_device_activity_label"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:id="@+id/id_add_device_choose_device_model_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/id_add_device_choose_model_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="5dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:padding="10dp"
+            android:text="@string/server_add_device_choose_device_model_list_label"
+            android:visibility="visible" />
+
+        <Spinner
+            android:id="@+id/id_add_device_choose_model_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/white_border"
+            android:foregroundGravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:visibility="visible" />
+
+        <FrameLayout
+            android:id="@+id/id_choose_server_frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/id_add_device_choose_server_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="@string/server_add_device_choose_server_list_label" />
+
+                <TextView
+                    android:id="@+id/id_choose_server_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/server_add_device_choose_server_list_message"
+                    android:textAlignment="center"
+                    android:textSize="11sp" />
+
+                <Spinner
+                    android:id="@+id/id_choose_server_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/white_border"
+                    android:foregroundGravity="center_horizontal"
+                    android:gravity="center_horizontal" />
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/id_add_device_choose_device_model_error_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="hello"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/id_add_device_options_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingTop="100dp"
+        android:paddingBottom="20dp"
+        android:visibility="gone">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/id_new_device_option_device_name_layout"
+            style="Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:hint="@string/server_add_device_device_name_hint"
+            android:textColorHint="@color/white"
+            app:boxBackgroundColor="@color/black"
+            app:boxBackgroundMode="outline"
+            app:boxCornerRadiusBottomEnd="4dp"
+            app:boxCornerRadiusBottomStart="4dp"
+            app:boxCornerRadiusTopEnd="4dp"
+            app:boxCornerRadiusTopStart="4dp"
+            app:boxStrokeColor="@color/text_input_layout_stroke_white"
+            app:boxStrokeErrorColor="@color/error"
+            app:counterEnabled="false"
+            app:counterOverflowTextAppearance="@style/Base.TextAppearance.MaterialComponents.Subtitle2"
+            app:counterTextAppearance="@style/Base.TextAppearance.MaterialComponents.Subtitle2"
+            app:errorEnabled="true"
+            app:errorTextAppearance="@style/Base.TextAppearance.MaterialComponents.Subtitle2"
+            app:errorTextColor="@color/design_default_color_error"
+            app:helperText="@string/server_add_device_device_name_helper"
+            app:hintTextAppearance="@style/MaterialCustomInputLayoutAppearance">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/id_new_device_option_device_name_input"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:inputType="text"
+                android:paddingTop="10dp"
+                android:paddingBottom="5dp"
+                android:textAllCaps="true" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/id_add_device_options_error"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/id_add_device_wifi_scan_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <FrameLayout
+            android:id="@+id/id_add_device_scan_result_frameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/white_border"
+            android:elevation="20dp"
+            android:padding="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.493"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/id_add_new_device_scan_message">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="82dp">
+
+                    <TextView
+                        android:id="@+id/id_add_device_wifi_scan_ap"
+                        android:layout_width="281dp"
+                        android:layout_height="27dp"
+                        android:gravity="center"
+                        android:text="@string/add_new_device_wifi_scan_ap_name_default_description"
+                        android:textSize="12sp"
+                        app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.592"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout3"
+                        android:layout_width="285dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/id_add_device_wifi_scan_ap">
+
+                        <ImageView
+                            android:id="@+id/id_scan_net_secured_icon"
+                            android:layout_width="18dp"
+                            android:layout_height="16dp"
+                            android:layout_marginStart="14dp"
+                            android:visibility="visible"
+                            app:srcCompat="@drawable/ic_signal_wifi_0_bar_white_24dp"
+                            app:tint="#FFFFFF" />
+
+                        <TextView
+                            android:id="@+id/id_net_secur_description"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:text="@string/nc_field_capital"
+                            android:textSize="12sp"
+                            android:visibility="visible" />
+
+                        <ImageView
+                            android:id="@+id/id_wifi_level_icon"
+                            android:layout_width="17dp"
+                            android:layout_height="16dp"
+                            android:layout_marginStart="14dp"
+                            app:srcCompat="@drawable/ic_wifi_level"
+                            app:tint="#FFFFFF" />
+
+                        <TextView
+                            android:id="@+id/id_wifi_level_label"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:text="@string/nc_field_capital"
+                            android:textSize="12sp"
+                            android:visibility="visible" />
+
+                        <ImageView
+                            android:id="@+id/id_wifi_mac_icon"
+                            android:layout_width="19dp"
+                            android:layout_height="16dp"
+                            android:layout_marginStart="14dp"
+                            android:layout_marginEnd="8dp"
+                            app:srcCompat="@drawable/ic_wifi_mac" />
+
+                        <TextView
+                            android:id="@+id/id_wifi_mac_label"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="14dp"
+                            android:gravity="center"
+                            android:text="@string/nc_field_capital"
+                            android:textSize="12sp"
+                            android:visibility="visible" />
+                    </LinearLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <FrameLayout
+                    android:id="@+id/id_add_device_scan_button_frame_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp"
+                    app:layout_constraintBottom_toTopOf="@+id/id_wifi_gps_buttons_frame"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/id_add_device_scan_result_frameLayout">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/id_add_device_scan_button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:text="@string/button_scan" />
+
+                    </LinearLayout>
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/id_add_device_scan_error_msg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/id_add_device_security_check_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/id_add_device_security_check_section_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="@string/server_add_device_security_check_label"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/id_add_device_security_check_ap_ssid_field_layout"
+            style="Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="5dp"
+            android:enabled="false"
+            android:hint="@string/wifi_setup_default_ssid_field_hint"
+            android:textColorHint="@color/white"
+            app:boxBackgroundColor="@color/black"
+            app:boxBackgroundMode="outline"
+            app:boxCornerRadiusBottomEnd="4dp"
+            app:boxCornerRadiusBottomStart="4dp"
+            app:boxCornerRadiusTopEnd="4dp"
+            app:boxCornerRadiusTopStart="4dp"
+            app:boxStrokeColor="@color/text_input_layout_stroke_white"
+            app:boxStrokeErrorColor="@color/error"
+            app:counterEnabled="false"
+            app:counterMaxLength="40"
+            app:counterOverflowTextAppearance="@style/Base.TextAppearance.MaterialComponents.Subtitle2"
+            app:counterTextAppearance="@style/Base.TextAppearance.MaterialComponents.Subtitle2"
+            app:errorEnabled="true"
+            app:errorTextAppearance="@style/Base.TextAppearance.MaterialComponents.Subtitle2"
+            app:errorTextColor="@color/design_default_color_error"
+            app:helperText="@string/wifi_setup_ssid_no_change_field_helper"
+            app:hintTextAppearance="@style/MaterialCustomInputLayoutAppearance">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/id_add_device_security_check_ap_ssid_input_field"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:inputType="textNoSuggestions"
+                android:paddingTop="10dp"
+                android:paddingBottom="5dp" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/id_add_device_security_check_ap_pass_field_layout"
+            style="Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="20dp"
+            android:hint="@string/wifi_setup_change_default_password_field_hint"
+            android:textColorHint="@color/white"
+            app:boxBackgroundColor="@color/black"
+            app:boxBackgroundMode="outline"
+            app:boxCornerRadiusBottomEnd="4dp"
+            app:boxCornerRadiusBottomStart="4dp"
+            app:boxCornerRadiusTopEnd="4dp"
+            app:boxCornerRadiusTopStart="4dp"
+            app:boxStrokeColor="@color/text_input_layout_stroke_white"
+            app:boxStrokeErrorColor="@color/error"
+            app:counterEnabled="true"
+            app:counterMaxLength="64"
+            app:counterOverflowTextAppearance="@style/Base.TextAppearance.MaterialComponents.Subtitle2"
+            app:counterTextAppearance="@style/Base.TextAppearance.MaterialComponents.Subtitle2"
+            app:endIconMode="password_toggle"
+            app:endIconTint="@color/white"
+            app:errorEnabled="true"
+            app:errorTextAppearance="@style/Base.TextAppearance.MaterialComponents.Subtitle2"
+            app:errorTextColor="@color/design_default_color_error"
+            app:helperText="@string/wifi_setup_password_field_helper"
+            app:hintTextAppearance="@style/MaterialCustomInputLayoutAppearance">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/id_add_device_security_check_ap_pass_input_field"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:inputType="textPassword"
+                android:paddingTop="10dp"
+                android:paddingBottom="5dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:id="@+id/id_add_device_save_device_prefs_status_message_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:visibility="gone">
+
+            <TextView
+                android:id="@+id/id_add_device_save_device_prefs_status_message_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/id_add_device_security_check_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="20dp"
+            android:text="@string/button_save" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/id_add_device_control_buttons_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/id_add_device_start_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="@string/button_start"
+            android:textSize="12sp"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/id_add_device_delete_device_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="@string/button_delete"
+            android:textSize="12sp"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/id_add_device_reset_device_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="@string/button_reset"
+            android:textSize="12sp"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/id_add_device_cancel_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:text="@string/button_cancel"
+            android:textSize="12sp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</LinearLayout>
